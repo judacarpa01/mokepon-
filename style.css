@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Press+Start+2P&display=swap');
+
+body{
+    font-family: 'Creepster', cursive;
+    background-image: url(./imgen/yo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: black;
+    gap: 20px;
+    font-size: 60px;
+}
+
+
+.subtitulo {
+    color: black;
+    gap: 10px;
+    font-size: 32px;
+}
+
+.tarjetas, .tarjetas-ataque {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-mokepon {
+    width: 160px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid rgb(5, 210, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.tarjeta-mokepon img {
+    width: 81px
+}
+
+#boton-mascota{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: #F79540;
+    border: 2px solid #F79540;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 30px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: rgb(5, 210, 5);
+}
+
+#rules {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.716) ;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#seleccionar-poder{
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonAtaque{
+    font-family: 'Press Start 2P', cursive;
+    background:#146b9488 ;
+    border: 2px solid #146C94;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: black;
+}
+
+#mensjaes{
+    width: 280px;
+    background: rgba(255, 255, 255, 0.716);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+
+#boton-reiniciar{
+    background-color: orange;
+    border: 2px orange ;
+    border-radius: 20px;
+    color: black;
+}
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+#vidas-jugador { 
+    font-size: 22px;
+    color: rgb(5, 215, 5);
+}
+
+#vidas-enemigo {
+    font-size: 22px;
+    color: rgb(229, 7, 7);
+}
+
+#mascota-jugador , #mascota-enemigo{
+    margin-top: 0px;
+}
+
+
+
+.ataques-jugador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 30px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    margin-left: 30px; 
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.imagenJ,.imagenJ .imagen{
+    margin-top: 0px;
+}
+
+@media (max-width: 418px) {
+
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+
+    .titulo {
+        font-size: 50px;
+    } 
+}
